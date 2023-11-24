@@ -6,6 +6,7 @@
 2. Run all cells in the notebook.
 
 ## Abstract:
+
 The goal of this project is to answer questions that are related to identifying beginner and advanced communities. These include finding the GS score distribution of subreddits that are similar to a given subreddit and finding thresholds in these distributions to separate beginner and advanced communities. There are many reasons why answering these questions could be useful, such as improving recommendation systems by allowing them to suggest communities that are beginner friendly to new users, as well as helping advanced users find other similar advanced communities. The flow of the data story will be answering these questions which will lead to being able to identify beginner and advanced communities on reddit.
 
 ## Research Questions:
