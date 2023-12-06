@@ -35,7 +35,11 @@ The nonlinear model appears to be fairly linear and both of the models appear to
 
 # Determining The Threshold And Creating The Recommendation System
 
-Since the trend is mostly linear for all of the lines but the starting point of the lines can be different, we can define a threshold relative to the specific line rather than using a particular threshold for all lines. An intuitive threshold would be to return the top 3 communities as beginner friendly communities and the bottom 3 as more advanced communities.
+Since the trend is mostly linear for all of the lines but the starting point of the lines can be different, we can define a threshold relative to the specific line rather than using a particular threshold for all lines. An intuitive threshold would be to return the top 3 communities as beginner friendly communities and the bottom 3 as more advanced communities. We can validate the effectiveness of the threshold by checking the differences between the average GS scores of the recommended beginner communities and the average GS scores of the recommended advanced communities.
+
+![differences](/images/plot-differences.png)
+
+The differences are mainly around 0.5, which means that the threshold appears to do a good job of separating the communities by their GS scores on average.
 
 Now that we have determined the general trend and have a threshold, we can identify beginner and advanced communities for a given subreddit. Doing this for the news subreddit we obtain the following.
 
