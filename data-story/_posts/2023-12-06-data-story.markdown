@@ -17,15 +17,21 @@ In order to solve the problems, we performed several setup steps. We incorporate
 
 To determine the trend, a function was created that takes a subreddit as input and determines the top 10 most similar communities based on the community embeddings, and then sorts them by their GS score. As an exploratory plot, we used the function passing "news" as input, and we obtained the following plot.
 
-![news](/images/plot_news.png)
+![news](/images/plot-news.png)
 
 Here we noticed that up to the first 9 communities (starting from community 0), the relationship is mainly linear, and afterwards there is a spike towards the last community.
 
 To find the general trend, we tried using all communities and plotting on the same plot as shown below.
 
-![all](/images/plot_all.png)
+![all](/images/plot-all.png)
 
 From the plot we notice that most of the lines follow the same trend of being mostly linear with a potential spike near the end.
+
+We can perform an extra validation step by fitting a linear and nonlinear model and checking if they are similar.
+
+![fits](/images/plot-fits.png)
+
+The nonlinear model appears to be fairly linear and both of the models appear to do a fairly good job representing the average line. In particular, it is more clear that there is a larger concentration of both lines that start and lines that end where the models started and ended. This provides more assurance that the general trend is linear.
 
 # Determining The Threshold And Creating The Recommendation System
 
