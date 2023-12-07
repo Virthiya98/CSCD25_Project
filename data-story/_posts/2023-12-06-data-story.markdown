@@ -43,7 +43,7 @@ The differences are mainly around 0.5, which means that the threshold appears to
 
 Now that we have determined the general trend and have a threshold, we can identify beginner and advanced communities for a given subreddit. Doing this for the news subreddit we obtain the following.
 
-{% highlight ruby %}
+{% highlight text %}
 Beginner Communities:
         subreddit  gs_score
 0  DestinyTheGame  0.479266
@@ -57,8 +57,8 @@ Advanced Communities:
 2     classicwow -0.166163
 {% endhighlight %}
 
-This looks fairly reasonable, since videos and canada intuitively sound like beginner communities, and the advanced community recommendation appear to be relatively more specific than the beginner communities.
+This looks fairly reasonable, since videos and canada intuitively sound like beginner communities, and the advanced community recommendations appear to be relatively more specific than the beginner communities.
 
 # Conclusion/Final Thoughts
 
-We determined a general trend for the GS scores of the most similar communities of a subreddit, and then we determined thresholds identify beginner and advanced communities. The recommendation system appears to give reasonable recommendations, since the beginner communities are more general and well known while the advanced communities are more specific. An interesting point to note is that a beginning or average user of reddit likely has not heard of the advanced communities, so the recommendation system opens more possibilities for these users. Another idea is that if we could extend the data size significantly, the recommendations would likely become more accurate in terms of similarity. In this case, it is a possibility that the top 10 or top n most similar subreddits still contain beginner friendly and advanced subreddits. For example, checking recommendations based on python would likely result in several beginner communities but with a large enough n, we could reach the more specific/advanced communities that are very similar.
+We determined a general trend for the GS scores of the most similar communities of a subreddit, and then we determined thresholds to identify beginner and advanced communities. The recommendation system appears to give reasonable recommendations, since the beginner communities are more general and well known while the advanced communities are more specific. An interesting point to note is that a beginning or average user of reddit likely has not heard of the advanced communities, so the recommendation system can open more possibilities for these users. Another idea is that if we could extend the amount of data used significantly, the recommendations would likely become more accurate in terms of similarity. In this case, it is a possibility that the top 10 or top n most similar subreddits still contain beginner friendly and advanced subreddits. For example, checking recommendations based on python would likely result in several beginner communities but with a large enough n, we could possibly reach the more specific/advanced communities that are very similar.
